@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ajánlat Generátor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Ajánlat Generátor</h1>
+    <form id="offerForm">
+        <label>Helyszín:
+            <input id="location" name="location" type="text" placeholder="Pl. Takler Kúria, Szekszárd" />
+        </label>
+        <label>Km-díj szorzó:
+            <input id="rate" name="rate" type="number" value="150" />
+        </label>
+        <label>Számított km-díj (Ft):
+            <input id="distanceFee" name="distanceFee" type="text" readonly />
+        </label>
+        <button type="button" onclick="calculateDistance()">Díj újraszámítása</button>
+    </form>
+</body>
+</html>
