@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <title>Angel Ceremony Ajánlat</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function initAutocomplete() {
+        console.log("Google Maps API init");
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7OZMaGRgCU6jBubYIH4RxW_SoEOtw13Y&libraries=places&callback=initAutocomplete">
+    </script>
+</head>
+<body>
+    <h1>Angel Ceremony Ajánlat</h1>
+    <form>
+        <label>Helyszín: <input id="location" type="text" name="location" /></label>
+        <button type="button" onclick="initAutocomplete()">Teszt helykereső</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
